@@ -1,5 +1,5 @@
-import parsed from './fixtures';
-import expected from './expectations';
+import parsed from './fixtures/fixture';
+import expected from './fixtures/expected';
 import { expect } from 'chai';
 
 describe('Markdown Parser', () => {

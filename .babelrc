@@ -2,7 +2,7 @@
   "presets": ["es2015"],
   "env": {
     "testing": {
-      "plugins": ["babel-plugin-markdown-compiler"]
+      "plugins": ["./src"]
     }
   }
 }
