@@ -4,7 +4,7 @@
   "description": "Compile markdown inside object literals",
   "main": "lib/index.js",
   "scripts": {
-    "test": "BABEL_ENV=testing ./node_modules/mocha/bin/mocha --compilers js:babel-register test/index.js",
+    "test": "BABEL_DISABLE_CACHE=1 BABEL_ENV=testing ./node_modules/mocha/bin/mocha --compilers js:babel-register test/index.js",
     "build": "./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {

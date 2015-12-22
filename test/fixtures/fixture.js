@@ -1,6 +1,6 @@
 const bold = '**Extra boldness**';
 
-export default {
+const md = {
   plainObj: {
     h1: '# This is an h1 header',
     bold: '**So strong!**',
@@ -23,5 +23,4 @@ export default {
   }
 }
 
-
-
+export default md;

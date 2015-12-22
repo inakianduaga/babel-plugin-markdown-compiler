@@ -1,5 +1,6 @@
 babel-plugin-markdown-compiler
 ================================
+
 > Compile markdown inside object literals
 
 The target of this plugin is to provide markdown compilation of static strings inside objects / variables in your application during compilation time.
@@ -7,10 +8,12 @@ It came as a necessity to support markdown inside typescript language files.
 
 ## Features:
 
-- Compiles markdown inside object literals;
-- Parse static markdown in your **@ compile time** instead of run time, increasing performance and reducing dependencies
+- Compiles markdown inside object literals using [Markdown-It](https://github.com/markdown-it/markdown-it);
+- Parse static markdown inside your app **on compile time** instead of runtime, increasing performance and reducing production dependencies.
 
-## Examples:
+## Example:
+
+If we start with the file
 
 ```js
 // some file.js
@@ -21,7 +24,7 @@ const mdObj = {
 
 ```
 
-after running through the babel compiler:
+after running through the babel compiler it becomes:
 
 ```js
 // compiled/file.js

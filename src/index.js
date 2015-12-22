@@ -1,17 +1,13 @@
-export default function ({ types: t }) {
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt();
+
+export default function ({ types: t }, options) {
   return {
     visitor: {
-      // visitor contents
-      BinaryExpression(path) {
-        console.log(path);
-        // path.parentPath.replaceWith(
-        //   t.expressionStatement(t.stringLiteral("Anyway the wind blows, doesn't really matter to me, to me."))
-        // );
+      StringLiteral(path) {
+        path.node.value = "<p>Some html tag</p>";
+        // path.node.value = md.renderInline(path.node.value);
       },
-      Identifier() {
-        console.log("Called!");
-      }
-
     }
   };
 };
