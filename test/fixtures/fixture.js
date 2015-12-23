@@ -7,8 +7,8 @@ const md = {
     hyperlink: 'Enclosing a [label](url) hyperlink',
   },
   mdTemplateLiteral: {
-    h2: `# This is an h2 header`,
-    h3: `# An h3 header with ${bold}`
+    h2: `## This is an h2 header`,
+    withVariable: `### An h3 header that wont be rendered, with ${bold}`
   },
   deeplyNested: {
     a: {
