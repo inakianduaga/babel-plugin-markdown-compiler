@@ -1,0 +1,35 @@
+{
+  "name": "babel-plugin-markdown-compiler",
+  "version": "0.0.0",
+  "description": "Compile markdown inside object literals",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "BABEL_DISABLE_CACHE=1 BABEL_ENV=testing ./node_modules/mocha/bin/mocha --compilers js:babel-register test/index.js",
+    "build": "./node_modules/.bin/babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inakianduaga/babel-plugin-markdown-compiler.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inakianduaga/babel-plugin-markdown-compiler/issues"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "markdown",
+    "compiler"
+  ],
+  "author": "Inaki Anduaga",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "markdown-it": "^5.0.2"
+  }
+}
